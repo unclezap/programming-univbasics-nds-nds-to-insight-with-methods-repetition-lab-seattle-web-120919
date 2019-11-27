@@ -37,11 +37,17 @@ end
 def total_gross(source)
   i = 0
   gross = 0
+<<<<<<< HEAD
   list = list_of_directors(source)
   totals = directors_totals(source)
   
   while i <source.length do
     gross += totals[list[i]]
+=======
+
+  while i <source.length do
+    gross += directors_totals(list_of_directors[i])
+>>>>>>> 32c87f06bdc716bb57559d679127b29e8b784dee
     i += 1
   end
   gross
